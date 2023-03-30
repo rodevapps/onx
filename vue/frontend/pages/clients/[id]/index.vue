@@ -1,6 +1,6 @@
 <template>
   <button><NuxtLink to="/">All clients</NuxtLink></button>
-  <p class="text-center" v-if="isLoading">Loading clients...</p>
+  <p class="text-center" v-if="isLoading">Loading client data...</p>
   <div v-if="!isLoading">
     <h3>{{client.name}} {{client.surname}}</h3>
     <p>Worker: {{worker.name}} {{worker.surname}}</p>
